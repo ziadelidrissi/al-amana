@@ -14,7 +14,7 @@ module.exports = {
         'body':'"Poppins", sans-serif',
         'sans':'"Montserrat", sans-serif',
       },
-      plugins: [require("daisyui")],
-    }
-  }
+    },
+  },
+  plugins: [require("daisyui")],
 }
