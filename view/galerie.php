@@ -9,13 +9,11 @@
 <body>
 
     <!-- HERO -->
-    <div class="absolute top-16 h-screen w-screen bg-gradient-to-b from-green to-transparent md:top-20 lg:top-24"></div>
-    <div class="hero min-h-screen" style="background-image: url(assets/img/hero-galerie.png);"  >
+    <div class="hero min-h-screen" style="background-image: url(assets/img/hero-galerie.png);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
             <h1 class="mb-5 text-5xl font-bold">Galerie photo</h1>
-            <p class="mb-5">Texte descritpif</p>
             </div>
         </div>
     </div>
