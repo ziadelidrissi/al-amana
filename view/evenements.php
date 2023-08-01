@@ -9,7 +9,7 @@
 <body>
 
     <!-- HERO -->
-    <div class="hero min-h-screen" style="background-image: url(assets/img/hero-evenements.png);"  >
+    <div class="hero min-h-screen" style="background-image: url(assets/img/hero-evenements.png);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -26,7 +26,9 @@
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
 
             <div class="card lg:card-side bg-base-100 shadow-xl">
-                <figure><img src="https://picsum.photos/id/684/600/400" alt=""></figure>
+                <figure>
+                    <img class="h-full w-full" src="https://picsum.photos/id/684/600/400" alt="">
+                </figure>
                 <div class="card-body">
                     <h2 class="card-title">Evenement 1</h2>
                     <p>Voir evenement 1</p>
@@ -34,7 +36,9 @@
             </div>
 
             <div class="card lg:card-side bg-base-100 shadow-xl">
-                <figure><img src="https://picsum.photos/id/685/600/400" alt=""></figure>
+                <figure>
+                    <img class="h-full w-full" src="https://picsum.photos/id/685/600/400" alt="">
+                </figure>
                 <div class="card-body">
                     <h2 class="card-title">Evenement 2</h2>
                     <p>Voir evenement 2</p>
@@ -42,7 +46,9 @@
             </div>
 
             <div class="card lg:card-side bg-base-100 shadow-xl">
-                <figure><img src="https://picsum.photos/id/686/600/400" alt=""></figure>
+                <figure>
+                    <img class="h-full w-full" src="https://picsum.photos/id/686/600/400" alt="">
+                </figure>
                 <div class="card-body">
                     <h2 class="card-title">Evenement 3</h2>
                     <p>Voir evenement 3</p>
@@ -50,7 +56,9 @@
             </div>
 
             <div class="card lg:card-side bg-base-100 shadow-xl">
-                <figure><img src="https://picsum.photos/id/687/600/400" alt=""></figure>
+                <figure>
+                    <img class="h-full w-full" src="https://picsum.photos/id/687/600/400" alt="">
+                </figure>
                 <div class="card-body">
                     <h2 class="card-title">Evenement 4</h2>
                     <p>Voir evenement 3</p>
@@ -58,7 +66,9 @@
             </div>
 
             <div class="card lg:card-side bg-base-100 shadow-xl">
-                <figure><img src="https://picsum.photos/id/688/600/400" alt=""></figure>
+                <figure>
+                    <img class="h-full w-full" src="https://picsum.photos/id/688/600/400" alt="">
+                </figure>
                 <div class="card-body">
                     <h2 class="card-title">Evenement 5</h2>
                     <p>Voir evenement 4</p>
