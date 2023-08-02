@@ -9,7 +9,7 @@
 
     <?php
     include('repository/config/Connect_bdd.php');
-    include('repository/Activite_repo');
+    include('repository/Activite_repo.php');
     include('model/Activite.php');
     include('repository/Evenement_repo.php');
     include('model/Evenement.php');
