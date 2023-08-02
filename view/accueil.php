@@ -23,14 +23,14 @@
         <!-- HERO -->
     
         <!-- ACTIVITES -->
-        <section class="bg-fixed bg-center bg-no-repeat bg-cover lg:h-screen flex items-center">
+        <section class="bg-fixed bg-center bg-no-repeat bg-cover lg:h-screen flex items-center my-10">
 
             <div class="flex flex-col gap-20 items-center justify-center mx-auto w-10/12 lg:w-9/12 xl:w-8/12">
-                <h1 class="my-10 text-5xl font-bold">Nos activités</h1>
+                <h1 class=" text-5xl font-bold">Nos activités</h1>
         
                     <!-- CARDS -->
                     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                        <div class="card bg-base-100 shadow-xl">
+                        <div class="card bg-base-100 shadow-2xl">
                             <div class="card-body">
                                 <h2 class="card-title">Activité 1</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -38,7 +38,7 @@
                             <figure><img class="h-40 w-full object-cover" src="https://picsum.photos/200/300?grayscale" alt="activite" /></figure>
                         </div>
         
-                        <div class="card bg-base-100 shadow-xl">
+                        <div class="card bg-base-100 shadow-2xl">
                             <div class="card-body">
                                 <h2 class="card-title">Activité 2</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -46,7 +46,7 @@
                             <figure><img class="h-40 w-full object-cover" src="https://picsum.photos/200/300?grayscale" alt="activite" /></figure>
                         </div>
         
-                        <div class="card bg-base-100 shadow-xl">
+                        <div class="card bg-base-100 shadow-2xl">
                             <div class="card-body">
                                 <h2 class="card-title">Activité 3</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -54,7 +54,7 @@
                             <figure><img class="h-40 w-full object-cover" src="https://picsum.photos/200/300?grayscale" alt="activite" /></figure>
                         </div>
         
-                        <div class="card bg-base-100 shadow-xl">
+                        <div class="card bg-base-100 shadow-2xl">
                             <div class="card-body">
                                 <h2 class="card-title">Activité 4</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -70,7 +70,7 @@
     
     
         <!-- DIVIDER -->
-        <div class="mt-20">
+        <div class="my-10">
     
             <div class="flex flex-row w-full lg:h-screen">
                 <div class="flex justify-center gap-8 py-10 md:py-0 flex-grow w-full md:w-1/2 card bg-green rounded-none place-items-center">
