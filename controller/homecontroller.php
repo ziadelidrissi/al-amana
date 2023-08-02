@@ -1,5 +1,17 @@
 <?php
 
+include('repository/config/Connect_bdd.php');
+
+include('model/Activite.php');
+include('model/Evenement.php');
+include('model/Photo.php');
+include('model/User.php');
+
+include('repository/Activite_repo.php');
+include('repository/Evenement_repo.php');
+include('repository/Photo_repo.php');
+include('repository/User_repo.php');
+
 function accueil()
 {
     include('view/accueil.php');
