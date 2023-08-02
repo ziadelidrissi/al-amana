@@ -21,13 +21,13 @@
 
 
     <!-- GALERIE -->
-    <section class="flex flex-col items-center my-20 mx-5 sm:mx-10 md:mx-20 lg:mx-32">
+    <section class="flex flex-col items-center my-10">
 
         <!-- CARDS -->
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div class="grid grid-cols-1 gap-8 w-10/12 md:grid-cols-2 xl:grid-cols-3 lg:w-9/12 xl:w-8/12">
 
             <div class="card shadow-xl image-full">
-                <figure><img src="https://picsum.photos/id/684/600/400?grayscale" alt=""></figure>
+                <figure><img class="h-full w-full object-cover" src="https://picsum.photos/id/684/600/400?grayscale" alt=""></figure>
             </div>
 
             <div class="card shadow-xl image-full">
