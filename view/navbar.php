@@ -2,7 +2,7 @@
   <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
   <div class="drawer-content flex flex-col">
     <!-- Navbar -->
-    <div class="w-screen border-b-4 border-b-black flex justify-center">
+    <div class="flex justify-center">
 
       <div class="navbar w-10/12 justify-between md:min-h-[5rem] lg:min-h-[6rem] lg:w-9/12 xl:w-8/12">
 

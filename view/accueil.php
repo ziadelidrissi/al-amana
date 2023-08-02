@@ -8,6 +8,12 @@
 </head>
 <body class="font-body">
 
+    <!-- NAV -->
+    <?php
+    include('view/navbar.php');
+    ?>
+    <!-- NAV -->
+
     <section>
 
         <!-- HERO -->
@@ -125,6 +131,12 @@
         <!-- DIVIDER -->
         
     </section>
+
+    <!-- FOOTER -->
+    <?php
+    include('view/footer.php');
+    ?>
+    <!-- FOOTER -->
 
 
 </body>

@@ -8,6 +8,12 @@
 </head>
 <body>
 
+    <!-- NAVBAR -->
+    <?php
+    include('view/navbar.php');
+    ?>
+    <!-- NAVBAR -->
+
     <!-- HERO -->
     <div class="hero min-h-screen" style="background-image: url(assets/img/hero-evenements.png);">
         <div class="hero-overlay bg-opacity-60"></div>
@@ -270,6 +276,12 @@
 
     </section>
     <!-- EVENEMENTS -->
+
+    <!-- FOOTER -->
+    <?php
+    include('view/footer.php');
+    ?>
+    <!-- FOOTER -->
 
 </body>
 </html>
