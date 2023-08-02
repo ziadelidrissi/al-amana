@@ -2,27 +2,32 @@
 
 function accueil()
 {
-    require('view/accueil');
+    include('view/accueil.php');
 }
+
 function galerie()
 {
-    require('view/galerie');
+    include('view/galerie.php');
 }
+
 function evenements()
 {
-    require('view/evenements');
+    include('view/evenements.php');
 }
+
 function en_savoir_plus()
 {
-    require('view/en_savoir_plus');
+    include('view/en_savoir_plus.php');
 }
+
 function adherez()
 {
-    require('view/adherez');
+    include('view/adherez.php');
 }
+
 function mentions_legales()
 {
-    require('view/mentions_legales');
+    include('view/mentions_legales.php');
 }
 
 ?>
