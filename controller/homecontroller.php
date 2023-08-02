@@ -42,4 +42,9 @@ function mentions_legales()
     include('view/mentions_legales.php');
 }
 
+function connexion()
+{
+    include('view/connexion.php');
+}
+
 ?>

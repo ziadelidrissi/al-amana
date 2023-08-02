@@ -24,6 +24,9 @@
             case 'mentions_legales':
                 mentions_legales();
                 break;
+            case 'connexion':
+                connexion();
+                break;
             default:
                 accueil();
                 break;
