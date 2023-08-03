@@ -17,20 +17,22 @@
                 <img class="h-20" src="assets/img/logo.png" alt="">
             </div>
 
-            <form method="POST" action="?action=connexion_traitement">
+            <form id="connexion-form" method="POST" action="?action=connexion_traitement">
+
+                <div id="error-message" class="text-red-800 font-bold"></div>
 
                 <div class="form-control w-full max-w-xs">
                     <label class="label">
                         <span class="label-text">Email</span>
                     </label>
-                    <input type="email" name="email" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    <input type="email" name="email" required class="input input-bordered w-full max-w-xs" />
                 </div>
 
                 <div class="form-control w-full max-w-xs">
                     <label class="label">
                         <span class="label-text">Mot de passe</span>
                     </label>
-                    <input type="password" name="mdp" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    <input type="password" name="password" required class="input input-bordered w-full max-w-xs" />
                 </div>
 
                 <input type="submit" value="Se connecter" class="btn btn-xs bg-black text-white mt-4 sm:btn-sm md:btn-md lg:btn-lg">
@@ -44,5 +46,6 @@
 
     </section>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

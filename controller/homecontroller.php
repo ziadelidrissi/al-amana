@@ -44,7 +44,64 @@ function mentions_legales()
 
 function connexion()
 {
-    include('view/connexion.php');
+    if(!isset($_SESSION['user'])) 
+    {
+        include ('view/connexion.php');
+    }
+    else
+    {
+        header("Location:?action=accueil");
+    }
+}
+
+function connexion_traitement()
+{
+
+    $response = array();
+
+    if (empty($_POST['email']) OR empty($_POST['password']) )
+    {
+        $response['error'] = true;
+        $response['message'] = 'Champs manquants';
+    } 
+    else
+    {
+        $repo = new User_repo;
+        $tmpUser = $repo->getUserByEmail($_POST['email']);
+        $user = new User;
+
+        if ($tmpUser)
+        {
+            $user->createUserFromQuery($tmpUser);
+            $isOk = $user->verifyUserToSignIn($_POST['password']);
+            
+            if ($isOk == "True" )
+            {
+                $user->connectUser();
+                $response['success'] = true;
+            }
+            else 
+            {
+                $response['error'] = true;
+                $response['message'] = 'Email ou mot de passe incorrect';
+            }
+        }
+        else 
+        {
+            $response['error'] = true;
+            $response['message'] = 'Email ou mot de passe incorrect';
+        }
+
+    }
+    
+    echo json_encode($response);
+    
+}
+
+function deconnexion()
+{
+    session_destroy();
+    header('Location: ?action=accueil');
 }
 
 ?>

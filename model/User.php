@@ -25,7 +25,7 @@ class User
         return $this->id_user;
     }
 
-    function getIdRoleUser()
+    public function getIdRoleUser()
     {
         return $this->id_role;
     }
@@ -81,6 +81,20 @@ class User
         {
             $this->mdp_user = $query['mdp_user'];
         }
+    }
+
+    public function verifyUserToSignin($password)
+    {
+        if (!password_verify($password,$this->getMdpUser()))
+        {
+            return "uncorrectPassword";
+        }
+        return "True";
+    }
+
+    public function connectUser()
+    {
+        $_SESSION['user'] = $this;
     }
 
 }

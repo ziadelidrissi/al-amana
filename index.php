@@ -2,7 +2,9 @@
 
     require_once('controller/homecontroller.php');
 
-    if (isset($_GET['action'])) 
+    session_start();
+
+    if ( isset($_GET['action']) && $_GET['action'] !== '') 
     {
         switch($_GET['action'])
         {
@@ -27,6 +29,12 @@
             case 'connexion':
                 connexion();
                 break;
+            case 'connexion_traitement':
+                connexion_traitement();
+                break;
+            case 'deconnexion':
+                deconnexion();
+                break;
             default:
                 accueil();
                 break;
@@ -34,6 +42,7 @@
     }
     else
     {
+        
         accueil();
     }
 
