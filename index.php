@@ -1,6 +1,7 @@
 <?php
 
     require_once('controller/homecontroller.php');
+    require_once('controller/admincontroller.php');
 
     session_start();
 
@@ -42,8 +43,14 @@
     }
     else
     {
-        
+        if(isset($_GET['admin']) && (!empty($_SESSION) && $_SESSION['user']->getIdRoleUser() === 1))
+        {
+        require('admin.php');
+        }
+        else
+        {
         accueil();
+        }
     }
 
 ?>

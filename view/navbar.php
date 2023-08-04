@@ -28,7 +28,7 @@
                 </svg>
               </label>
               <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Tableau de bord</a></li>
+                <li><a href="?action=crud">Tableau de bord</a></li>
                 <li><a href="?action=deconnexion">Se déconnecter</a></li>
               </ul>
             </li>

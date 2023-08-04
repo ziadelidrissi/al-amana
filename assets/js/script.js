@@ -16,7 +16,7 @@ document.getElementById('connexion-form').addEventListener('submit', function(ev
                 if (response.error) {
                     document.getElementById('error-message').innerHTML = response.message;
                 } else if (response.success) {
-                    window.location.href = "?admin=accueil";
+                    window.location.href = "?admin=&action=";
                 }
             }
         }   
