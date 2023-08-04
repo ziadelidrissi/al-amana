@@ -1,5 +1,4 @@
 // AJAX FORM CONNEXION
-
 document.getElementById('connexion-form').addEventListener('submit', function(event) {
     
     var form = event.target;
@@ -26,5 +25,4 @@ document.getElementById('connexion-form').addEventListener('submit', function(ev
     
     event.preventDefault();
 });
-
 // AJAX FORM CONNEXION

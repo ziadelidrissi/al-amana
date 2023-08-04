@@ -15,7 +15,7 @@ class Photo_repo extends Connect_bdd
             $tmpPhoto = new Photo;
             $tmpPhoto->createPhotoFromQuery($query);
 
-            return ["Photo" => $tmpPhoto];
+            return ["photo" => $tmpPhoto];
         }
 
         $sql = "SELECT * FROM Photo";

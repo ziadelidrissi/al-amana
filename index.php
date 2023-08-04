@@ -5,7 +5,7 @@
 
     session_start();
 
-    if ( isset($_GET['action']) && $_GET['action'] !== '') 
+    if ( isset($_GET['action']) && $_GET['action'] !== '' && !isset($_GET['admin'])) 
     {
         switch($_GET['action'])
         {

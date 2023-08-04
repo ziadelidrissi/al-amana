@@ -35,11 +35,10 @@
                 <h1 class=" text-5xl font-bold">Nos activités</h1>
         
                     <!-- CARDS -->
-                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full">
                         <div class="card bg-base-100 shadow-2xl">
                             <div class="card-body">
                                 <h2 class="card-title">Activité 1</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
                             </div>
                             <figure><img class="h-40 w-full object-cover" src="https://picsum.photos/200/300?grayscale" alt="activite" /></figure>
                         </div>
@@ -47,7 +46,6 @@
                         <div class="card bg-base-100 shadow-2xl">
                             <div class="card-body">
                                 <h2 class="card-title">Activité 2</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
                             </div>
                             <figure><img class="h-40 w-full object-cover" src="https://picsum.photos/200/300?grayscale" alt="activite" /></figure>
                         </div>
@@ -55,7 +53,6 @@
                         <div class="card bg-base-100 shadow-2xl">
                             <div class="card-body">
                                 <h2 class="card-title">Activité 3</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
                             </div>
                             <figure><img class="h-40 w-full object-cover" src="https://picsum.photos/200/300?grayscale" alt="activite" /></figure>
                         </div>
@@ -63,7 +60,6 @@
                         <div class="card bg-base-100 shadow-2xl">
                             <div class="card-body">
                                 <h2 class="card-title">Activité 4</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
                             </div>
                             <figure><img class="h-40 w-full object-cover" src="https://picsum.photos/200/300?grayscale" alt="activite" /></figure>
                         </div>
