@@ -20,10 +20,38 @@ function getAllActivites()
 
     foreach ($reqResult as $result)
     {
-        $response[] = "<div>Nom : ".$result['activite']->getTitreActivite()."</div>";
+        $response[] = "<div class='overflow-x-auto'>
+                            <table class='table'>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                    <div class='flex items-center space-x-3'>
+                                        <div class='avatar'>
+                                        <div class='mask mask-squircle w-12 h-12'>
+                                            <img src='assets/img/".$result['activite']->getImageActivite()."' alt='".$result['activite']->getImageActivite()."' />
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </td>
+                                    <td>
+                                    ".$result['activite']->getTitreActivite()."
+                                    <br/>
+                                    </td>
+                                    <th class='flex flex-col justify-end'>
+                                        <button class='mx-auto btn bg-yellow text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg'>Modifier</button>
+                                        <button class='mx-auto btn bg-red-500 text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg'>Supprimer</button>
+                                    </th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>";
     }
 
-    echo json_encode($response);
+    $addBtn[] = "<div class='flex justify-center mt-10'>
+                    <button class='mx-auto btn bg-green text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg'>Ajouter une activité</button>
+                </div> ";
+
+    echo json_encode([$response, $addBtn]);
 }
 function getAllEvenements()
 {
@@ -33,11 +61,45 @@ function getAllEvenements()
 
     foreach ($reqResult as $result)
     {
-        $response[] = "<div>Nom : ".$result['evenement']->getTitreEvenement()."</div>";
+        $response[] = "<div class='overflow-x-auto'>
+                            <table class='table'>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                    <div class='flex items-center space-x-3'>
+                                        <div class='avatar'>
+                                        <div class='mask mask-squircle w-12 h-12'>
+                                            <img src='assets/img/".$result['evenement']->getImageEvenement()."' alt='".$result['evenement']->getImageEvenement()."' />
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </td>
+                                    <td>
+                                        ".$result['evenement']->getTitreEvenement()."
+                                    </td>
+                                    <td>
+                                        ".$result['evenement']->getDescriptionEvenement()."
+                                    </td>
+                                    <td>
+                                        ".$result['evenement']->getDateEvenement()."
+                                    </td>
+                                    <th class='flex flex-col justify-end'>
+                                        <button class='mx-auto btn bg-yellow text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg'>Modifier</button>
+                                        <button class='mx-auto btn bg-red-500 text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg'>Supprimer</button>
+                                    </th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>";
     }
 
-    echo json_encode($response);
+    $addBtn[] = "<div class='flex justify-center mt-10'>
+                    <button class='mx-auto btn bg-green text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg'>Ajouter un évènement</button>
+                </div> ";
+
+    echo json_encode([$response, $addBtn]);
 }
+
 function getAllPhotos()
 {
     $repo = new Photo_repo();
@@ -46,10 +108,37 @@ function getAllPhotos()
 
     foreach ($reqResult as $result)
     {
-        $response[] = "<div>Nom : ".$result['photo']->getTitrePhoto()."</div>";
+        $response[] = "<div class='overflow-x-auto'>
+                            <table class='table'>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                    <div class='flex items-center space-x-3'>
+                                        <div class='avatar'>
+                                        <div class='mask mask-squircle w-12 h-12'>
+                                            <img src='assets/img/".$result['photo']->getImagePhoto()."' alt='".$result['photo']->getImagePhoto()."' />
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </td>
+                                    <td>
+                                        ".$result['photo']->getTitrePhoto()."
+                                    </td>
+                                    <th class='flex flex-col justify-end'>
+                                        <button class='mx-auto btn bg-yellow text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg'>Modifier</button>
+                                        <button class='mx-auto btn bg-red-500 text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg'>Supprimer</button>
+                                    </th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>";
     }
 
-    echo json_encode($response);
+    $addBtn[] = "<div class='flex justify-center mt-10'>
+                    <button class='mx-auto btn bg-green text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg'>Ajouter une photo</button>
+                </div> ";
+
+    echo json_encode([$response, $addBtn]);
 }
 
 ?>

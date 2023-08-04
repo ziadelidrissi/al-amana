@@ -1,22 +1,3 @@
-// TABULATION CRUD
-const tabs = document.querySelectorAll('[id^="tab"]');
-const tabContents = document.querySelectorAll('[id^="content"]');
-
-tabs.forEach(tab => {
-tab.addEventListener('click', () => {
-    tabs.forEach(t => t.classList.remove('bg-green', 'text-white'));
-    
-    tab.classList.add('bg-green', 'text-white');
-
-    const tabId = tab.getAttribute('id').replace('tab', '');
-
-    tabContents.forEach(content => content.classList.add('hidden'));
-    document.getElementById(`content${tabId}`).classList.remove('hidden');
-});
-});
-// TABULATION CRUD
-
-
 // AJAX CONTENT DISPLAYED
 let activiteBtn = document.getElementById("tab1");
 let evenementBtn = document.getElementById("tab2");
@@ -39,7 +20,7 @@ async function changeContent(dataLocation, newUrl) {
 
 if (activiteBtn != null) {
     activiteBtn.addEventListener("click", () => {changeContent("getAllActivites", "crudActivite")});
-}
+}       
 if (evenementBtn != null) {
     evenementBtn.addEventListener("click", () => {changeContent("getAllEvenements", "crudEvenement")});
 }
