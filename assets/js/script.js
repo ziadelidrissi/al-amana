@@ -12,7 +12,7 @@ document.getElementById('connexion-form').addEventListener('submit', function(ev
             if (xhr.status === 200) {
                 var response = JSON.parse(xhr.responseText);
 
-                if (response.error) {
+                if (!(response.success)) {
                     document.getElementById('error-message').innerHTML = response.message;
                 } else if (response.success) {
                     window.location.href = "?admin=&action=";

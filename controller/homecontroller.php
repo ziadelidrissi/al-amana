@@ -61,7 +61,7 @@ function connexion_traitement()
 
     if (empty($_POST['email']) OR empty($_POST['password']) )
     {
-        $response['error'] = true;
+        $response['success'] = false;
         $response['message'] = 'Champs manquants';
     } 
     else
@@ -82,13 +82,13 @@ function connexion_traitement()
             }
             else 
             {
-                $response['error'] = true;
+                $response['success'] = false;
                 $response['message'] = 'Email ou mot de passe incorrect';
             }
         }
         else 
         {
-            $response['error'] = true;
+            $response['success'] = false;
             $response['message'] = 'Email ou mot de passe incorrect';
         }
 

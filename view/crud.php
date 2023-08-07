@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/output.css" rel="stylesheet">
-    <title>Accueil - Al Amana</title>
+    <title>Tableau de bord - Al Amana</title>
 </head>
 <body class="font-body">
 
