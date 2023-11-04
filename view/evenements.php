@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Événements - Al Amana</title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
     <!-- NAVBAR -->
 
     <!-- HERO -->
-    <div class="hero min-h-screen" style="background-image: url(assets/img/hero-evenements.png);">
+    <div class="hero min-h-screen" style="background-image: url(assets/img/toit_mosquee.jpeg);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -35,26 +35,25 @@
 
                     <div class="card lg:card-side bg-base-100 shadow-xl cursor-pointer transition ease-out hover:scale-110"  onclick="my_modal_1.showModal()">
                         <figure class="lg:w-1/2">
-                            <img class="h-full w-full" src="https://picsum.photos/id/684/600/400" alt="">
+                            <img class="h-40 w-full object-cover" src="assets/img/cours_novembre_2023.jpg" alt="">
                         </figure>
 
-                        <div class="card-body lg:w-1/2">
-                            <h2 class="card-title">Evenement 1</h2>
-                            <p>27/04/2022</p>
+                        <div class="card-body py-4 lg:w-1/2">
+                            <h2 class="card-title">Cours de sciences islamiques</h2>
+                            <p>09/11/2023</p>
                             <dialog id="my_modal_1" class="modal my-10">
                                 <form method="dialog" class="modal-box">
                                     <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
 
-                                    <h3 class="font-bold text-lg">Evenement 1</h3>
+                                    <h3 class="font-bold text-lg">Cours de sciences islamiques</h3>
 
-                                    <img class="h-full w-full" src="https://picsum.photos/id/684/600/400" alt="">
+                                    <img class="h-full w-full" src="assets/img/cours_novembre_2023.jpg" alt="">
 
-                                    <p class="font-body my-5 font-semibold">
-                                    Les participants seront initiés aux enseignements et aux croyances islamiques qui guident le processus de lavage mortuaire. 
-                                    Ils apprendront l'importance spirituelle et religieuse de cet acte et comment il reflète les valeurs fondamentales de l'islam.
-                                    </p>
+                                    <a href="assets/pdf/cours.pdf" download class="flex justify-center font-body my-5 font-semibold hover:underline hover:font-bold">
+                                    S'inscrire
+                                    </a>
 
-                                    <div class="carousel w-full">
+                                    <!-- <div class="carousel w-full">
                                         <div id="slide1" class="carousel-item relative w-full">
                                             <img class="w-full" src="https://picsum.photos/id/684/600/400" alt="">
                                             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -83,18 +82,18 @@
                                             <a href="#slide1" class="btn btn-circle">❯</a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
-                                    <img src="https://picsum.photos/id/1081/600/400" alt="">
+                                    <!-- <img src="https://picsum.photos/id/1081/600/400" alt=""> -->
 
                                 </form>
                             </dialog>
                         </div>
                     </div>
 
-                    <div class="card lg:card-side bg-base-100 shadow-xl cursor-pointer transition ease-out hover:scale-110"  onclick="my_modal_2.showModal()">
+                    <!-- <div class="card lg:card-side bg-base-100 shadow-xl cursor-pointer transition ease-out hover:scale-110"  onclick="my_modal_2.showModal()">
                         <figure class="lg:w-1/2">
-                            <img class="h-full w-full" src="https://picsum.photos/id/684/600/400" alt="">
+                            <img class="h-40 w-full object-cover" src="https://picsum.photos/id/684/600/400" alt="">
                         </figure>
 
                         <div class="card-body lg:w-1/2">
@@ -153,7 +152,7 @@
 
                     <div class="card lg:card-side bg-base-100 shadow-xl cursor-pointer transition ease-out hover:scale-110"  onclick="my_modal_3.showModal()">
                         <figure class="lg:w-1/2">
-                            <img class="h-full w-full" src="https://picsum.photos/id/684/600/400" alt="">
+                            <img class="h-40 w-full object-cover" src="https://picsum.photos/id/684/600/400" alt="">
                         </figure>
 
                         <div class="card-body lg:w-1/2">
@@ -212,7 +211,7 @@
 
                     <div class="card lg:card-side bg-base-100 shadow-xl cursor-pointer transition ease-out hover:scale-110"  onclick="my_modal_4.showModal()">
                         <figure class="lg:w-1/2">
-                            <img class="h-full w-full" src="https://picsum.photos/id/684/600/400" alt="">
+                            <img class="h-40 w-full object-cover" src="https://picsum.photos/id/684/600/400" alt="">
                         </figure>
 
                         <div class="card-body lg:w-1/2">
@@ -267,7 +266,7 @@
                                 </form>
                             </dialog>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <!-- CARDS -->

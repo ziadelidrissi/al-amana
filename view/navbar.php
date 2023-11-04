@@ -16,9 +16,9 @@
           <ul class="menu menu-horizontal">
             <!-- Navbar menu content here -->
             <li class="text-green text-xl"><a href="?action=accueil">Accueil</a></li>
-            <li class="text-green text-xl"><a href="?action=galerie">Galerie</a></li>
+            <!-- <li class="text-green text-xl"><a href="?action=galerie">Galerie</a></li> -->
             <li class="text-green text-xl"><a href="?action=evenements">Événements</a></li>
-            <li class="text-green text-xl"><a href="?action=en_savoir_plus">En savoir plus</a></li>
+            <!-- <li class="text-green text-xl"><a href="?action=en_savoir_plus">En savoir plus</a></li> -->
           </ul>
         </div>
 

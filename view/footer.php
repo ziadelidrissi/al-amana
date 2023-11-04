@@ -25,9 +25,9 @@
       </div>
 
       <li class="text-white text-xl"><a href="?action=accueil">Accueil</a></li>
-      <li class="text-white text-xl"><a href="?action=galerie">Galerie</a></li>
+      <!-- <li class="text-white text-xl"><a href="?action=galerie">Galerie</a></li> -->
       <li class="text-white text-xl"><a href="?action=evenements">Événements</a></li>
-      <li class="text-white text-xl"><a href="?action=en_savoir_plus">En savoir plus</a></li>
+      <!-- <li class="text-white text-xl"><a href="?action=en_savoir_plus">En savoir plus</a></li> -->
 
       <div class="px-4 mt-4 flex justify-between items-center">
         <button class="btn bg-yellow border-yellow text-white text-xl normal-case">
@@ -36,7 +36,7 @@
           </a>
         </button>
 
-        <a href="">
+        <a href="https://www.facebook.com/people/Al-Amana/100092717252891/">
           <img class="h-4" src="assets/img/facebook.png" alt="facebook">
         </a>
       </div>
